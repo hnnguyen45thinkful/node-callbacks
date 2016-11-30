@@ -29,6 +29,6 @@ function onEndCallback() {
 	console.log("End")
 }
 
-var progress = new progressTracker(onStartCallback, onProgressCallback, onEndCallback)
+var progress = new progressBarTracker(onStartCallback, onProgressCallback, onEndCallback)
 
 progress.start()
