@@ -17,3 +17,18 @@ function progressBarTracker(onStart, onProgress, onEnd) {
 		this._onEnd()
 	}
 }
+function onStartCallback() {
+	console.log("Starting")
+}
+
+function onProgressCallback(value) {
+	console.log("...... " + value)
+}
+
+function onEndCallback() {
+	console.log("End")
+}
+
+var progress = new progressTracker(onStartCallback, onProgressCallback, onEndCallback)
+
+progress.start()
